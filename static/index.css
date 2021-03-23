@@ -1,0 +1,58 @@
+@font-face {
+    src : url("./fonts/BMJUA_ttf.ttf");
+    font-family: "jua"
+}
+
+h1 {
+    font-family: "jua";
+    color: rgb(0, 150, 0);
+}
+h3, a, button {
+    font-family: "jua";
+}
+
+h3 {
+    font-size: 25px;
+}
+.container {
+    max-width: 850px;
+}
+
+.div_option {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.div_option_count {
+    margin-right: 30px;
+}
+
+.div_option_button {
+    margin-bottom: 10px;
+}
+
+#input_text {
+    width: 100%; 
+    max-width: 850px; 
+    min-height: 200px;
+}
+
+#selector {
+    width: 50px; 
+    margin-left: 10px;
+}
+
+.output_text {
+    font-family: "jua";
+    font-size: 20px;
+}
+
+#outputbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: "jua";
+}

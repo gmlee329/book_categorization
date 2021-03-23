@@ -1,0 +1,69 @@
+<HTML>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164242824-17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164242824-17');
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <title>책책박사</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron mt-3">
+
+            <h1>책책박사의 추천추천!</h1>
+            <hr class="solid">
+            <h3>도서 내용을 넣으면 카테고리를 분류해주고 해당 카테고리의 책을 추천해드립니다!</h3>
+            <A>도서 정보 참조 : </A> <A href="http://www.yes24.com">www.yes24.com</A>
+
+            <hr class="solid">
+            <div class="div_option">
+                <!-- <div class="div_option_count">
+                    <label for="selector">추천 받을 도서 수 : </label>
+                    <select name="selector" id="selector">
+                    </select>
+                </div> -->
+                <div class="div_option_button">
+                    <button id="submit" type='submit' onclick="this.disabled=true;" class="btn btn-primary btn-lg"> 
+                        추천 받기!
+                    </button>
+                </div>
+            </div>
+
+            <hr class="solid">
+            <div class="div_output" id="div_output">
+                <div class="output_text" id="output_category">예측 카테고리 : </div>
+                <div class="output_text" id="output_accuracy">정확도 : </div>
+                <hr class="solid">
+                <div id="outputbox"></div>
+            </div>
+            <hr class="solid">
+            <div>
+                <div class="div_input_text">
+                    <textarea id="input_text" placeholder="도서 내용을 입력하세요."></textarea>
+                </div>
+            </div>
+            <hr class="solid">
+        </div>
+    </div>
+    <script src="../static/index.js"></script>
+</body>
+
+</HTML>
